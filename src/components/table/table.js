@@ -48,10 +48,9 @@ const Table = ({ table, addForm, getData, loadedPersons, toggelAddform, startTab
     
     const pageCount = Math.ceil(personsSearh.length / pageSize);
     
-    console.log(open)
     return (
         <div className='table-wrapper'>
-            <button onClick={() => toggelAddform()}> Add person </button>
+            <button className='button-form-toggle'onClick={() => toggelAddform()}> Add person {open ? <span className='button-form-toggle__indicator'>-</span> : <span className='button-form-toggle__indicator'>+</span>}</button>
             {open && <AddRow />}
             <Search />
             {
