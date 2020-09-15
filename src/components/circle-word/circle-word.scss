@@ -1,0 +1,31 @@
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+  
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.circle-word {
+    margin: auto;
+    color: #000;
+    transform: rotate(0deg);
+    transform-origin: center;
+    animation: rotate 20s infinite linear;
+}
+
+.circle-word__letter {
+    font-weight: 700;
+    position: absolute;
+    left: 43%;
+    top: 0%;
+    transform-origin: bottom center;
+}
+
+.wrapper-circle-word {
+    margin: auto;
+    position: relative;
+    border-radius: 100px;
+}
