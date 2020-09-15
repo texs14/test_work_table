@@ -6,7 +6,6 @@
 
         .table__cell {
             text-align: center;
-            // width: 200px;
             border-right: 2px solid red;
             border-top: 2px solid red;
             border-bottom: 2px solid red;
@@ -24,6 +23,16 @@
     }
 
     &__body {
+
+        .table__row {
+
+            cursor: pointer;
+
+            &:hover {
+                background: #d3d2d2;
+                transition: .2s;
+            }
+        }
 
         .table__cell {
             text-align: center;
@@ -95,5 +104,17 @@
         .add-form__input {
             width: 100%;
         }
+    }
+}
+
+.button-form-toggle {
+
+    font-size: 18px;
+
+    &__indicator {
+        color: #ff0000;
+        font-size: 22px;
+        line-height: 15px;
+        font-weight: bold;
     }
 }
